@@ -4,14 +4,14 @@ let loginBtn = document.getElementById("login")
 
 // loginBtn.addEventListener('click', login)
 
-// loginBtn.click = login
+loginBtn.onclick = login
 
 function testClick () {
     console.log("tesss")
 }
 
-function login() {
-    // event.preventDefault()
+function login(event) {
+    event.preventDefault()
 
     let userLogin = {
         username: inputUsername.value,
