@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <header
+      class="max-w-7xl mx-auto rounded-full mt-2 bg-indigo-400 flex justify-between items-center p-5 px-10 "
+    >
+      <!-- logo -->
+       <div>
+         <h1 class="text-6xl font-bold inline leading-4">zan</h1>
+       </div>
+
+      <div class="flex items-center gap-10">
+        <!-- navigation -->
+        <nav>
+          <ul class="flex gap-5">
+            <li>Home</li>
+            <li>about</li>
+            <li>contact</li>
+          </ul>
+        </nav>
+
+        <!-- auth button -->
+        <div>
+          <button
+            class="bg-white rounded-full px-5 py-2 hover:cursor-pointer hover:bg-slate-200"
+          >
+            login
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- list product -->
+    <section class="max-w-7xl mx-auto my-40">
+      <h1 class="text-center text-7xl mb-20">product</h1>
+      <button class="btn btn-primary">Primary</button>
+
+      <div class="grid grid-cols-2 gap-3 lg:grid-cols-4">
+        <div class="bg-indigo-600 w-[300px] h-[300px]"></div>
+        <div class="bg-indigo-600 w-[300px] h-[300px]"></div>
+        <div class="bg-indigo-600 w-[300px] h-[300px]"></div>
+        <div class="bg-indigo-600 w-[300px] h-[300px]"></div>
+      </div>
+    </section>
+  </body>
+</html>
