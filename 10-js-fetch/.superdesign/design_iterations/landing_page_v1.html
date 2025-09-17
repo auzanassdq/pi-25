@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brutalist Landing Page - v1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Brutalist Design System */
+        :root {
+            --primary: #FF3366;
+            --secondary: #2D2D2D;
+            --accent: #00FF00;
+            --background: #F5F5F5;
+        }
+
+        .brutal-shadow {
+            box-shadow: 8px 8px 0px #000000;
+        }
+
+        .brutal-border {
+            border: 3px solid #000000;
+        }
+
+        .brutal-hover:hover {
+            transform: translate(-4px, -4px);
+            box-shadow: 12px 12px 0px #000000;
+            transition: all 0.2s ease;
+        }
+
+        .glitch-text {
+            position: relative;
+            animation: glitch 3s infinite;
+        }
+
+        @keyframes glitch {
+            0% { transform: translate(0); }
+            20% { transform: translate(-2px, 2px); }
+            40% { transform: translate(-2px, -2px); }
+            60% { transform: translate(2px, 2px); }
+            80% { transform: translate(2px, -2px); }
+            100% { transform: translate(0); }
+        }
+
+        .marquee {
+            animation: marquee 15s linear infinite;
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
+</head>
+<body class="bg-[#F5F5F5]">
+    <!-- Navbar -->
+    <nav class="fixed w-full top-0 z-50 bg-white brutal-border">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-black brutal-hover cursor-pointer">
+                    BRUTAL<span class="text-[#FF3366]">.DESIGN</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#" class="font-bold hover:text-[#FF3366] brutal-hover">HOME</a>
+                    <a href="#" class="font-bold hover:text-[#FF3366] brutal-hover">FEATURES</a>
+                    <a href="#" class="font-bold hover:text-[#FF3366] brutal-hover">TESTIMONIALS</a>
+                    <a href="#" class="font-bold hover:text-[#FF3366] brutal-hover">CONTACT</a>
+                </div>
+                <button class="md:hidden brutal-border p-2">
+                    <div class="w-6 h-0.5 bg-black mb-1"></div>
+                    <div class="w-6 h-0.5 bg-black mb-1"></div>
+                    <div class="w-6 h-0.5 bg-black"></div>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="mt-24 container mx-auto px-6 py-16">
+        <div class="grid md:grid-cols-2 gap-12">
+            <div class="space-y-8">
+                <h1 class="text-7xl font-black leading-tight glitch-text">
+                    BREAK<br>
+                    THE<br>
+                    <span class="text-[#FF3366]">DESIGN</span>
+                </h1>
+                <p class="text-xl font-bold">
+                    Embrace the chaos. Create the extraordinary.
+                </p>
+                <button class="brutal-border brutal-shadow brutal-hover bg-[#FF3366] text-white px-8 py-4 text-xl font-black">
+                    GET STARTED
+                </button>
+            </div>
+            <div class="relative">
+                <div class="brutal-border brutal-shadow bg-white p-8 rotate-3">
+                    <img src="https://picsum.photos/600/400" alt="Hero Image" class="w-full brutal-border">
+                </div>
+                <div class="absolute -bottom-4 -left-4 bg-[#00FF00] brutal-border p-4 -rotate-6">
+                    <span class="font-black text-2xl">CHAOS™</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marquee Banner -->
+    <div class="overflow-hidden bg-black text-white py-4 my-16">
+        <div class="marquee whitespace-nowrap font-black text-2xl">
+            BREAK THE RULES * EMBRACE THE CHAOS * DESIGN WITHOUT LIMITS * 
+            BREAK THE RULES * EMBRACE THE CHAOS * DESIGN WITHOUT LIMITS *
+        </div>
+    </div>
+
+    <!-- Features -->
+    <section class="container mx-auto px-6 py-16">
+        <h2 class="text-5xl font-black mb-12">FEATURES</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="brutal-border brutal-shadow p-6 bg-white brutal-hover">
+                <div class="text-4xl mb-4">🚀</div>
+                <h3 class="text-2xl font-black mb-4">SPEED</h3>
+                <p>Lightning fast performance that breaks the sound barrier.</p>
+            </div>
+            <div class="brutal-border brutal-shadow p-6 bg-white brutal-hover">
+                <div class="text-4xl mb-4">💥</div>
+                <h3 class="text-2xl font-black mb-4">IMPACT</h3>
+                <p>Make a statement that cannot be ignored.</p>
+            </div>
+            <div class="brutal-border brutal-shadow p-6 bg-white brutal-hover">
+                <div class="text-4xl mb-4">🎨</div>
+                <h3 class="text-2xl font-black mb-4">STYLE</h3>
+                <p>Break free from the constraints of traditional design.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="bg-black text-white py-16 my-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-5xl font-black mb-12">THEY SAID</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="brutal-border p-6 brutal-hover" style="border-color: white;">
+                    <p class="text-xl mb-4">"This design literally broke my monitor. 10/10 would break again."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 brutal-border mr-4" style="border-color: white;">
+                            <img src="https://i.pravatar.cc/100?img=1" alt="Avatar" class="w-full h-full">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Jane Cooper</h4>
+                            <p class="text-[#FF3366]">Design Anarchist</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="brutal-border p-6 brutal-hover" style="border-color: white;">
+                    <p class="text-xl mb-4">"I've never seen anything like this. It's beautifully chaotic."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 brutal-border mr-4" style="border-color: white;">
+                            <img src="https://i.pravatar.cc/100?img=2" alt="Avatar" class="w-full h-full">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">John Smith</h4>
+                            <p class="text-[#FF3366]">Creative Rebel</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="brutal-border-t">
+        <div class="container mx-auto px-6 py-16">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="space-y-4">
+                    <h3 class="text-2xl font-black">BRUTAL<span class="text-[#FF3366]">.DESIGN</span></h3>
+                    <p>Breaking design conventions since 2025.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">NAVIGATION</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-[#FF3366]">Home</a></li>
+                        <li><a href="#" class="hover:text-[#FF3366]">Features</a></li>
+                        <li><a href="#" class="hover:text-[#FF3366]">Testimonials</a></li>
+                        <li><a href="#" class="hover:text-[#FF3366]">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">SOCIAL</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-[#FF3366]">Twitter</a></li>
+                        <li><a href="#" class="hover:text-[#FF3366]">Instagram</a></li>
+                        <li><a href="#" class="hover:text-[#FF3366]">Discord</a></li>
+                    </ul>
+                </div>
+                <div class="brutal-border brutal-shadow p-6 bg-[#FF3366] text-white">
+                    <h4 class="font-bold mb-4">NEWSLETTER</h4>
+                    <input type="email" placeholder="Enter your email" class="w-full brutal-border p-2 mb-4 bg-white text-black">
+                    <button class="w-full brutal-border brutal-hover bg-black text-white p-2 font-bold">
+                        SUBSCRIBE
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="brutal-border-t">
+            <div class="container mx-auto px-6 py-4">
+                <p class="text-center font-bold">
+                    © 2025 BRUTAL.DESIGN. ALL RIGHTS SHATTERED.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

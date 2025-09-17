@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WomenCareer - Empowering Women in Career</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-[#FFF5E4]">
+    <nav class="p-6 border-b-4 border-black">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold text-[#FF69B4] tracking-wider">WomenCareer</h1>
+            <div class="space-x-6">
+                <a href="index.html" class="font-bold hover:text-[#FF69B4]">Home</a>
+                <a href="jobs.html" class="font-bold hover:text-[#FF69B4]">Jobs</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto p-6">
+        <section class="hero mb-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="space-y-6">
+                    <h1 class="text-6xl font-black text-[#FF69B4] leading-tight hero-title">
+                        Your Career Journey Starts Here
+                    </h1>
+                    <p class="text-xl">
+                        Transform your job search into an exciting adventure. Earn XP, level up, and unlock achievements while building your career.
+                    </p>
+                    <a href="jobs.html" class="inline-block px-8 py-4 bg-[#FF69B4] text-white font-bold text-lg transform hover:rotate-2 transition-transform border-4 border-black shadow-brutal">
+                        Start Your Journey
+                    </a>
+                </div>
+                <div class="stats border-4 border-black p-6 bg-white shadow-brutal">
+                    <h2 class="text-2xl font-bold mb-4">Your Progress</h2>
+                    <div class="space-y-4">
+                        <div class="level-info">
+                            <p class="text-lg font-bold">Current Level: <span class="text-[#FF69B4]">Explorer</span></p>
+                            <div class="w-full bg-gray-200 h-4 border-2 border-black">
+                                <div class="w-1/4 bg-[#FF69B4] h-full"></div>
+                            </div>
+                        </div>
+                        <div class="xp-info">
+                            <p class="text-lg font-bold">XP Points: <span class="text-[#FF69B4]">250</span></p>
+                        </div>
+                        <div class="badges grid grid-cols-3 gap-4 mt-4">
+                            <div class="badge border-2 border-black p-2 text-center">
+                                <span class="block text-3xl">🎯</span>
+                                <span class="text-sm font-bold">Explorer</span>
+                            </div>
+                            <div class="badge border-2 border-black p-2 text-center opacity-50">
+                                <span class="block text-3xl">📚</span>
+                                <span class="text-sm font-bold">Learner</span>
+                            </div>
+                            <div class="badge border-2 border-black p-2 text-center opacity-50">
+                                <span class="block text-3xl">🤝</span>
+                                <span class="text-sm font-bold">Connector</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            <div class="feature border-4 border-black p-6 bg-white shadow-brutal transform hover:rotate-1 transition-transform">
+                <h3 class="text-xl font-bold mb-2">Earn XP Points</h3>
+                <p>Complete your profile, take skill tests, and apply for jobs to earn experience points.</p>
+            </div>
+            <div class="feature border-4 border-black p-6 bg-white shadow-brutal transform hover:-rotate-1 transition-transform">
+                <h3 class="text-xl font-bold mb-2">Level Up</h3>
+                <p>Progress through levels from Explorer to Professional as you grow in your career journey.</p>
+            </div>
+            <div class="feature border-4 border-black p-6 bg-white shadow-brutal transform hover:rotate-1 transition-transform">
+                <h3 class="text-xl font-bold mb-2">Earn Badges</h3>
+                <p>Unlock achievements and collect badges to showcase your professional growth.</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
