@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from "react"
+import { Button } from "@/components/ui/button"
 
 export default function Counter () {
     const [count, setCount] = useState(0)
@@ -17,9 +18,9 @@ export default function Counter () {
 
     return (
         <div className="text-2xl">
-            <button className="p-4 bg-slate-400" onClick={decrement}>-</button>
+            <Button onClick={decrement}>-</Button>
             <span className="m-4">{count}</span>
-            <button className="p-4 bg-slate-400" onClick={increment}>+</button>
+            <Button onClick={increment}>+</Button>
         </div>
     )
 }
