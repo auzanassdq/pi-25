@@ -24,15 +24,15 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Providers>
-          <header>
+          <header className="border flex border-white justify-between">
             <div>logo</div>
-            <nav>
+            <nav className="flex gap-4">
               <li>Home</li>
               <li>About</li>
               <li>Contact</li>
             </nav>
           </header>
-          
+
           {children}
         </Providers>
       </body>
